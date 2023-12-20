@@ -1,0 +1,29 @@
+{
+  "TableName": "Costumer",
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "id",
+      "AttributeType": "S"
+    }
+  ],
+  "KeySchema": [
+    {
+      "AttributeName": "id",
+      "KeyType": "HASH"
+    }
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 5,
+    "WriteCapacityUnits": 5
+  }
+}
+
+
+/*
+aws dynamodb --endpoint-url "http://localhost:4566" create-table --table-name Costumer --attribute-definitions "AttributeName=id,AttributeType=S" --key-schema "AttributeName=id,KeyType=HASH" --provisioned-throughput "ReadCapacityUnits=5,WriteCapacityUnits=5"
+*/
+
+
+/*
+aws dynamodb list-tables --endpoint-url=http://localhost:4569
+*/

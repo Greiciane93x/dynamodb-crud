@@ -1,0 +1,1 @@
+referência: https://vitormoschetti.medium.com/java-spring-boot-amazon-dynamodb-em-ambiente-local-eb7019e6b58a
